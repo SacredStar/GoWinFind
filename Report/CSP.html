@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<title>Report</title>
+	<style>
+       table,th,td {
+           border: 1px solid grey
+        }
+    </style>
+	<table>
+	<th> №Line </th>
+    <th> Path </th>
+    <th>  Sign </th>
+    <th>  Line </th>
+	<th>  isWhite? </th><tr><td>56</td><td>Source\edi_client\trust_plugin\libs\crypto\crypto_core\src\provider_algorithm_registry.cpp</td><td>CryptGetProvParam</td><td>               while( ::CryptGetProvParam( hcryptprov.value(), PP_ENUMALGS, reinterpret_cast< PBYTE </td><td>true</td>
+</tr><tr><td>32</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\scoped_handle.h</td><td>CryptReleaseContext</td><td>               []( value_type& wich ){ ::CryptReleaseContext( wich, 0 ); }</td><td>true</td>
+</tr><tr><td>58</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\scoped_handle.h</td><td>CryptAcquireContext</td><td>                    if( !::CryptAcquireContextW( &wich, szContainer, szProvider, type, dwFlags ) )</td><td>true</td>
+</tr><tr><td>64</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\scoped_handle.h</td><td>CryptReleaseContext</td><td>               []( value_type& wich ){ ::CryptReleaseContext( wich, 0 ); }</td><td>true</td>
+</tr><tr><td>78</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\scoped_handle.h</td><td>CryptAcquireContext</td><td>                    if( !::CryptAcquireContextW( &wich, szContainer, szProvider, type, flags ) )</td><td>true</td>
+</tr><tr><td>84</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\scoped_handle.h</td><td>CryptReleaseContext</td><td>               []( value_type& wich ){ ::CryptReleaseContext( wich, 0 ); }</td><td>true</td>
+</tr><tr><td>98</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\scoped_handle.h</td><td>CryptAcquireContext</td><td>                    if( !::CryptAcquireContextW( &wich, szContainer, szProvider, type, flags ) )</td><td>true</td>
+</tr><tr><td>104</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\scoped_handle.h</td><td>CryptReleaseContext</td><td>               []( value_type& wich ){ ::CryptReleaseContext( wich, 0 ); }</td><td>true</td>
+</tr><tr><td>147</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\csr_creator.cpp</td><td>CryptSetProvParam</td><td>               if( !::CryptSetProvParam( hcryptprov.value(), PP_DHOID, ( BYTE* ) ( oid::gost2001Cryp</td><td>true</td>
+</tr><tr><td>154</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\csr_creator.cpp</td><td>CryptSetProvParam</td><td>               if( !::CryptSetProvParam( hcryptprov.value(), PP_DHOID, ( BYTE* ) ( &from->publicKeyA</td><td>true</td>
+</tr><tr><td>37</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\private_key.cpp</td><td>CryptContextAddRef</td><td>          ::CryptContextAddRef( hcryptprov.value(), 0, 0 );</td><td>true</td>
+</tr><tr><td>48</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\private_key.cpp</td><td>CryptReleaseContext</td><td>     ::CryptReleaseContext( prov_, 0 );</td><td>true</td>
+</tr><tr><td>82</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\provider.cpp</td><td>CryptEnumProviders</td><td>          while( ::CryptEnumProvidersW( index, 0, 0, &type, 0, &size ) && size )</td><td>true</td>
+</tr><tr><td>86</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\provider.cpp</td><td>CryptEnumProviders</td><td>               if( ::CryptEnumProvidersW( index, 0, 0, &type, &name[ 0 ], &size ) )</td><td>true</td>
+</tr><tr><td>116</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\provider.cpp</td><td>CryptGetProvParam</td><td>          if( ::CryptGetProvParam( prov, PP_UNIQUE_CONTAINER, NULL, &size, 0 ) && size )</td><td>true</td>
+</tr><tr><td>120</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\provider.cpp</td><td>CryptGetProvParam</td><td>               if( !::CryptGetProvParam( prov, PP_UNIQUE_CONTAINER, reinterpret_cast< BYTE* >( &resu</td><td>true</td>
+</tr><tr><td>160</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\provider.cpp</td><td>CryptAcquireContext</td><td>               if( !::CryptAcquireContextW( hprov.get(), each.c_str(), provider.name().c_str(), prov</td><td>true</td>
+</tr><tr><td>282</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\provider.cpp</td><td>CryptGetProvParam</td><td>               if( ::CryptGetProvParam( hcryptprov.value(), PP_VERSION, ( BYTE* )&version, &size, 0 </td><td>true</td>
+</tr><tr><td>321</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\provider.cpp</td><td>CryptGetProvParam</td><td>               while( ::CryptGetProvParam( hcryptprov.value(), PP_ENUMALGS, reinterpret_cast< PBYTE </td><td>true</td>
+</tr><tr><td>448</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\provider.cpp</td><td>CryptGetProvParam</td><td>               if( flag = ::CryptGetProvParam( hcryptprov.value(), PP_ENUMCONTAINERS, NULL, &size, C</td><td>true</td>
+</tr><tr><td>454</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\provider.cpp</td><td>CryptGetProvParam</td><td>                         if( flag = ::CryptGetProvParam( hcryptprov.value(), PP_ENUMCONTAINERS, rein</td><td>true</td>
+</tr><tr><td>463</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\provider.cpp</td><td>CryptGetProvParam</td><td>                                   flag = ::CryptGetProvParam( hcryptprov.value(), PP_ENUMCONTAINERS</td><td>true</td>
+</tr><tr><td>647</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\provider.cpp</td><td>CryptGetProvParam</td><td>               if( flag = ::CryptGetProvParam( hcryptprov.value(), PP_ENUMCONTAINERS, NULL, &size, C</td><td>true</td>
+</tr><tr><td>653</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\provider.cpp</td><td>CryptGetProvParam</td><td>                         if( flag = ::CryptGetProvParam( hcryptprov.value(), PP_ENUMCONTAINERS, rein</td><td>true</td>
+</tr><tr><td>662</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\provider.cpp</td><td>CryptGetProvParam</td><td>                                   flag = ::CryptGetProvParam( hcryptprov.value(), PP_ENUMCONTAINERS</td><td>true</td>
+</tr><tr><td>716</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\provider.cpp</td><td>CryptGetProvParam</td><td>               if( flag = ::CryptGetProvParam( hcryptprov.value(), PP_ENUMCONTAINERS, NULL, &size, C</td><td>true</td>
+</tr><tr><td>722</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\provider.cpp</td><td>CryptGetProvParam</td><td>                         if( flag = ::CryptGetProvParam( hcryptprov.value(), PP_ENUMCONTAINERS, rein</td><td>true</td>
+</tr><tr><td>740</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\provider.cpp</td><td>CryptGetProvParam</td><td>                                   flag = ::CryptGetProvParam( hcryptprov.value(), PP_ENUMCONTAINERS</td><td>true</td>
+</tr><tr><td>643</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\tools.cpp</td><td>CryptGetProvParam</td><td>     if( ::CryptGetProvParam( prov, PP_CONTAINER, NULL, &size, 0 ) )</td><td>true</td>
+</tr><tr><td>649</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\tools.cpp</td><td>CryptGetProvParam</td><td>               if( ::CryptGetProvParam( prov, PP_CONTAINER, reinterpret_cast< BYTE* >( &buffer[ 0 ] </td><td>true</td>
+</tr><tr><td>656</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\tools.cpp</td><td>CryptGetProvParam</td><td>     if( ::CryptGetProvParam( prov, PP_UNIQUE_CONTAINER, NULL, &size, 0 ) )</td><td>true</td>
+</tr><tr><td>662</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\tools.cpp</td><td>CryptGetProvParam</td><td>               if( ::CryptGetProvParam( prov, PP_UNIQUE_CONTAINER, reinterpret_cast< BYTE* >( &buffe</td><td>true</td>
+</tr><tr><td>678</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\tools.cpp</td><td>CryptGetProvParam</td><td>     if( ::CryptGetProvParam( prov, PP_NAME, NULL, &size, 0 ) )</td><td>true</td>
+</tr><tr><td>684</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\tools.cpp</td><td>CryptGetProvParam</td><td>               if( ::CryptGetProvParam( prov, PP_NAME, reinterpret_cast< BYTE* >( &buffer[ 0 ] ), &s</td><td>true</td>
+</tr><tr><td>700</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\tools.cpp</td><td>CryptGetProvParam</td><td>     if( ::CryptGetProvParam( prov, PP_PROVTYPE, NULL, &size, 0 ) )</td><td>true</td>
+</tr><tr><td>704</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\tools.cpp</td><td>CryptGetProvParam</td><td>               if( ::CryptGetProvParam( prov, PP_PROVTYPE, reinterpret_cast< BYTE* >( &result ), &si</td><td>true</td>
+</tr></table></head><body></body></html>

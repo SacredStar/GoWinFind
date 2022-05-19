@@ -1,0 +1,13 @@
+CryptAcquireContext
+CryptContextAddRef
+CryptEnumProviders
+CryptEnumProviderTypes
+CryptGetDefaultProvider
+CryptGetProvParam
+CryptInstallDefaultContext
+CryptReleaseContext
+CryptSetProvider 
+CryptSetProviderEx
+CryptSetProvParam
+CryptUninstallDefaultContext
+FreeCryptProvFromCertEx

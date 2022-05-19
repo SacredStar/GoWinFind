@@ -1,0 +1,9 @@
+CryptGenKey
+CryptReleaseContext
+CryptExportKey
+CryptGenRandom
+CryptGetKeyParam
+CryptGetUserKey
+CryptReleaseContext
+CryptImportKey
+CryptSetKeyParam
