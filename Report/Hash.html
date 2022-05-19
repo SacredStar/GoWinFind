@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<title>Report</title>
+	<style>
+       table,th,td {
+           border: 1px solid grey
+        }
+    </style>
+	<table>
+	<th> №Line </th>
+    <th> Path </th>
+    <th>  Sign </th>
+    <th>  Line </th>
+	<th>  isWhite? </th><tr><td>164</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\scoped_handle.h</td><td>CryptDestroyHash</td><td>               []( value_type& wich ){ ::CryptDestroyHash( wich ); }</td><td>true</td>
+</tr><tr><td>38</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\hash.cpp</td><td>CryptCreateHash</td><td>          if( !::CryptCreateHash( hcryptprov_.value(), algId.get(), 0, 0, hcrypthash_.get() ) )</td><td>true</td>
+</tr><tr><td>64</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\hash.cpp</td><td>CryptCreateHash</td><td>          if( !::CryptCreateHash( hcryptprov_.value(), algId.get(), 0, 0, hcrypthash_.get() ) )</td><td>true</td>
+</tr><tr><td>84</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\hash.cpp</td><td>CryptHashData</td><td>               if( !::CryptHashData( hcrypthash_.value(), reinterpret_cast< BYTE* >( buffer ), stati</td><td>true</td>
+</tr><tr><td>91</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\hash.cpp</td><td>CryptGetHashParam</td><td>          if( !::CryptGetHashParam( hcrypthash_.value(), HP_HASHVAL, 0, &size, 0 ) )</td><td>true</td>
+</tr><tr><td>101</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\hash.cpp</td><td>CryptGetHashParam</td><td>          if( !::CryptGetHashParam( hcrypthash_.value(), HP_HASHVAL, reinterpret_cast< BYTE* >( &res</td><td>true</td>
+</tr><tr><td>115</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\hash.cpp</td><td>CryptSignHash</td><td>     if( !::CryptSignHashA( hcrypthash_.value(), AT_KEYEXCHANGE, 0, 0, 0, &size ) )</td><td>true</td>
+</tr><tr><td>124</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\hash.cpp</td><td>CryptSignHash</td><td>          if( !::CryptSignHashA( hcrypthash_.value(), AT_KEYEXCHANGE, 0, 0, ( BYTE* )&result[ 0 ], &</td><td>true</td>
+</tr><tr><td>144</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\hash.cpp</td><td>CryptVerifySignature</td><td>     const auto ok = ::CryptVerifySignatureA( hcrypthash_.value(), reinterpret_cast< const BYTE* >( </td><td>true</td>
+</tr><tr><td>140</td><td>Source\edi_client\trust_plugin\libs\xml\xml_dsign\src\capi_test.cpp</td><td>CryptCreateHash</td><td>               if( ::CryptCreateHash( hprov, *algId, 0, 0, &hash_ ) )</td><td>true</td>
+</tr><tr><td>157</td><td>Source\edi_client\trust_plugin\libs\xml\xml_dsign\src\capi_test.cpp</td><td>CryptDestroyHash</td><td>          ::CryptDestroyHash( hash_ );</td><td>true</td>
+</tr><tr><td>192</td><td>Source\edi_client\trust_plugin\libs\xml\xml_dsign\src\capi_test.cpp</td><td>CryptHashData</td><td>               if( !::CryptHashData( hash_, reinterpret_cast< BYTE* >( bufferWithoutBom ), static_ca</td><td>true</td>
+</tr><tr><td>200</td><td>Source\edi_client\trust_plugin\libs\xml\xml_dsign\src\capi_test.cpp</td><td>CryptGetHashParam</td><td>          if( !::CryptGetHashParam( hash_, HP_HASHVAL, 0, &hashSize, 0 ) )</td><td>true</td>
+</tr><tr><td>205</td><td>Source\edi_client\trust_plugin\libs\xml\xml_dsign\src\capi_test.cpp</td><td>CryptGetHashParam</td><td>          if( !::CryptGetHashParam( hash_, HP_HASHVAL, reinterpret_cast< BYTE* >( mdValue_ ), &hashS</td><td>true</td>
+</tr><tr><td>343</td><td>Source\edi_client\trust_plugin\libs\xml\xml_dsign\src\capi_test.cpp</td><td>CryptSignHash</td><td>     if( !::CryptSignHashA( htxfm->hash(), AT_KEYEXCHANGE, 0, 0, 0, &signSize ) )</td><td>true</td>
+</tr><tr><td>351</td><td>Source\edi_client\trust_plugin\libs\xml\xml_dsign\src\capi_test.cpp</td><td>CryptSignHash</td><td>     if( !::CryptSignHashA( htxfm->hash(), AT_KEYEXCHANGE, 0, 0, ( BYTE* )&sign[ 0 ], &signSize ) )</td><td>true</td>
+</tr><tr><td>392</td><td>Source\edi_client\trust_plugin\libs\xml\xml_dsign\src\capi_test.cpp</td><td>CryptVerifySignature</td><td>     auto result = CryptVerifySignatureA(</td><td>true</td>
+</tr><tr><td>174</td><td>Source\edi_client\trust_plugin\libs\xml\xml_dsign\src\capi_work.cpp</td><td>CryptCreateHash</td><td>          if( !::CryptCreateHash( hprov, oidToAlgId( publicKeyAlgOid ), 0, 0, &hash_ ) )</td><td>true</td>
+</tr><tr><td>182</td><td>Source\edi_client\trust_plugin\libs\xml\xml_dsign\src\capi_work.cpp</td><td>CryptDestroyHash</td><td>          ::CryptDestroyHash( hash_ );</td><td>true</td>
+</tr><tr><td>216</td><td>Source\edi_client\trust_plugin\libs\xml\xml_dsign\src\capi_work.cpp</td><td>CryptHashData</td><td>               if( !::CryptHashData( hash_, reinterpret_cast< BYTE* >( bufferWithoutBom ), static_ca</td><td>true</td>
+</tr><tr><td>223</td><td>Source\edi_client\trust_plugin\libs\xml\xml_dsign\src\capi_work.cpp</td><td>CryptGetHashParam</td><td>          if( !::CryptGetHashParam( hash_, HP_HASHVAL, 0, &hashSize, 0 ) )</td><td>true</td>
+</tr><tr><td>228</td><td>Source\edi_client\trust_plugin\libs\xml\xml_dsign\src\capi_work.cpp</td><td>CryptGetHashParam</td><td>          if( !::CryptGetHashParam( hash_, HP_HASHVAL, reinterpret_cast< BYTE* >( mdValue_ ), &hashS</td><td>true</td>
+</tr><tr><td>364</td><td>Source\edi_client\trust_plugin\libs\xml\xml_dsign\src\capi_work.cpp</td><td>CryptSignHash</td><td>     if( !::CryptSignHashA( htxfm->hash(), AT_KEYEXCHANGE, 0, 0, 0, &signSize ) )</td><td>true</td>
+</tr><tr><td>372</td><td>Source\edi_client\trust_plugin\libs\xml\xml_dsign\src\capi_work.cpp</td><td>CryptSignHash</td><td>     if( !::CryptSignHashA( htxfm->hash(), AT_KEYEXCHANGE, 0, 0, ( BYTE* )&sign[ 0 ], &signSize ) )</td><td>true</td>
+</tr><tr><td>417</td><td>Source\edi_client\trust_plugin\libs\xml\xml_dsign\src\capi_work.cpp</td><td>CryptVerifySignature</td><td>     auto result = CryptVerifySignatureA(</td><td>true</td>
+</tr><tr><td>491</td><td>Source\edi_client\trust_plugin\libs\xml\xml_dsign\src\capi_work.cpp</td><td>CryptVerifySignature</td><td>     auto result = CryptVerifySignatureA(</td><td>true</td>
+</tr></table></head><body></body></html>

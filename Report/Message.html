@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<title>Report</title>
+	<style>
+       table,th,td {
+           border: 1px solid grey
+        }
+    </style>
+	<table>
+	<th> №Line </th>
+    <th> Path </th>
+    <th>  Sign </th>
+    <th>  Line </th>
+	<th>  isWhite? </th><tr><td>124</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\scoped_handle.h</td><td>CryptMsgClose</td><td>               []( value_type& wich ){ ::CryptMsgClose( wich ); }</td><td>true</td>
+</tr><tr><td>142</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\private_key.cpp</td><td>CryptMsgOpenToEncode</td><td>     hcryptmsg.value() = ::CryptMsgOpenToEncode( X509_ASN_ENCODING | PKCS_7_ASN_ENCODING, cmsgFlags,</td><td>true</td>
+</tr><tr><td>153</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\private_key.cpp</td><td>CryptMsgUpdate</td><td>          if( !::CryptMsgUpdate( hcryptmsg.value(), reinterpret_cast< BYTE* >( buff ), static_cast< </td><td>true</td>
+</tr><tr><td>725</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\tools.cpp</td><td>CryptMsgGetParam</td><td>          if( !::CryptMsgGetParam( msg, param, 0, &result, &size ) )</td><td>true</td>
+</tr><tr><td>740</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\tools.cpp</td><td>CryptMsgGetParam</td><td>          if( ::CryptMsgGetParam( msg, CMSG_SIGNER_CERT_INFO_PARAM, index, 0, &size ) && size )</td><td>true</td>
+</tr><tr><td>744</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\tools.cpp</td><td>CryptMsgGetParam</td><td>               if( ::CryptMsgGetParam( msg, CMSG_SIGNER_CERT_INFO_PARAM, index, &result[ 0 ], &size </td><td>true</td>
+</tr><tr><td>800</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\tools.cpp</td><td>CryptMsgUpdate</td><td>          if( !::CryptMsgUpdate( msg, reinterpret_cast< BYTE* >( buff ), static_cast< DWORD >( readL</td><td>true</td>
+</tr><tr><td>832</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\tools.cpp</td><td>CryptMsgOpenToDecode</td><td>               if( hcryptmsg.value() = ::CryptMsgOpenToDecode( X509_ASN_ENCODING | PKCS_7_ASN_ENCODI</td><td>true</td>
+</tr><tr><td>845</td><td>Source\edi_client\trust_plugin\libs\crypto\wincrypt\src\tools.cpp</td><td>CryptMsgControl</td><td>                                   if( ::CryptMsgControl( hcryptmsg.value(), 0, CMSG_CTRL_VERIFY_SIG</td><td>true</td>
+</tr></table></head><body></body></html>
