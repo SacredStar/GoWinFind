@@ -88,7 +88,7 @@ func (res *Result) PrintToFile(file *os.File) {
 		if _, err := file.Write([]byte(`</tr>`)); err != nil {
 			log.Fatal(err)
 		}
-		if res.Whitelist[i] == false {
+		if !res.Whitelist[i] {
 			log.Printf("finded not whitelist function at line %s  path:%s \n sign:%s \n",
 				res.LineNum[i], res.Path[i], res.Sign[i])
 		}
@@ -198,13 +198,15 @@ func IsSignWhiteListed(WhiteListsFilesPaths []string, sign string) (isWhite bool
 // WalkDirSRC -- исследует имеющиеся сигнатуры Signs в директории SRC_DIR из settings.
 // Игнорирует расширения ignoreExtList
 func WalkDirSRC(signsCh chan Signs, wg *sync.WaitGroup, ignoreExtList []string, setting settings) {
-	defer close(signsCh)
 	for sign := range signsCh {
 		signs := sign
 		fmt.Println("Processing Sign-file: ", signs.PathName)
 		CreateIfNotExistReportDir(setting)
 		//Split Sign.Name to confirm directory(folder)
 		reportFile, err := CreateOpenReportFile(signs, setting)
+		if err != nil {
+			log.Fatal(err)
+		}
 		//Process every file in src directory except ignored extensions
 		err = filepath.Walk(setting.SRCDIR,
 			func(path string, info os.FileInfo, err error) error {
@@ -301,13 +303,16 @@ func main() {
 	flag.String("help", "help", "ПО предназначено для ОВ на ОС СН, при задание дополнительных аргументов,относительные пути начинаются в unix-style через ./")
 	flag.Parse()
 	var signs []Signs
-	ignoreExtList := []string{".dll", ".dcu", ".dcp", ".so", ".exe", ".map", ".pas", ".dbg", ".7z", ".rar", ".bpl"}
+	ignoreExtList := []string{".dll", ".dcu", ".dcp", ".so", ".exe", ".map", ".pas", ".dbg", ".7z", ".rar", ".bpl", ".lib", ".db", ".ipch",
+		".VC.db"}
 	//Get Signs structs slice from files in SIGN_DIR
 	for _, SignFile := range WalkDirGetPaths(setting.SignDir) {
 		signs = append(signs, ProcessSignFile(SignFile, setting, true))
 	}
 
 	//Process every Sign with report in Report_dir
+	// leak
+	// размер SignCh
 	var signCh = make(chan Signs, 20)
 	var wg sync.WaitGroup
 
@@ -316,6 +321,7 @@ func main() {
 		signCh <- sign
 	}
 	go WalkDirSRC(signCh, &wg, ignoreExtList, setting)
+
 	wg.Wait()
 
 }
